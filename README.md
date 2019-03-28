@@ -38,7 +38,7 @@ Three ways to use AWS:
 <br>
 
 ## AWS Core Services
-**EC2, EBS, …**
+**EC2, EBS, S3, …**
 
 ### Elastic Compute Cloud (EC2)
  - **Elastic** – if properly configured, automatically scale servers required by an application according to current demands on that application
@@ -75,3 +75,19 @@ EBS is a storage unit for EC2 instances
  - Can mount this EBS volume into a folder on Linux machine
  - At any time can unmount EBS volume from folder – then can detach EBS volume from EC2 instance in AWS Console
  - Once detached/available, can attach this EBS volume to another EC2 instance in same availability zone
+<br>
+
+### Simple Storage Service (S3)
+Store virtually unlimited number of objects – S3 can handle very large objects such as images, videos, or large data files.
+Can access data via AWS Console, CLI, SDKs; can also access data in bucket directly, via REST endpoints (these support HTTP or HTTPS access).
+
+S3 is:
+ - **Durable** – data redundantly stored in region
+ - **Efficient** – designed for seamless scaling (scales for data growth, application use, and high request volume)
+ - **Accessible (offers URL-based access)** – content can be fetched directly over the web (can offload serving of content from your application and allow clients to directly fetch data themselves from S3)
+
+In S3:
+ - **Buckets** hold data (retrieved via keys)
+ - When creating bucket, name must be DNS-compliant
+ - Can add data to bucket via AWS Console (drag and drop) or via AWS CLI.  From AWS Console, can change properties and permissions on a per-object-basis.
+ - When retrieving data, can add bucket data to a local folder on an EC2 instance
