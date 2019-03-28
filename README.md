@@ -38,7 +38,7 @@ Three ways to use AWS:
 <br>
 
 ## AWS Core Services
-**EC2, EBS, S3, …**
+**EC2, EBS, S3, Global Infrastructure, …**
 
 ### Elastic Compute Cloud (EC2)
  - **Elastic** – if properly configured, automatically scale servers required by an application according to current demands on that application
@@ -91,3 +91,10 @@ In S3:
  - When creating bucket, name must be DNS-compliant
  - Can add data to bucket via AWS Console (drag and drop) or via AWS CLI.  From AWS Console, can change properties and permissions on a per-object-basis.
  - When retrieving data, can add bucket data to a local folder on an EC2 instance
+<br>
+
+### Global Infrastructure
+**AWS Global Infrastructure comprised of Regions, Availability Zones, and Edge Locations**
+ - **Regions** – geographic areas that host two or more Availability Zones.  Regions are completely separate entities from one another.  Resources in one Region are not automatically replicated to other Regions.  In practice, select a Region that helps minimize latency, lower cost, and adhere to regulatory requirements.
+ - **Availability Zones** – collection of data centers in a specific Region.  With reliability in mind, Availability Zones are isolated to protected one Zone from failures in other Zones (if one Zone goes down, the other Zones can handle requests).
+ - **Edge Locations** – enable quicker content delivery.  Edge Locations host a Content Delivery Network (CDN) called Amazon Cloud Front.  Requests for content are automatically routed to nearest Edge Location (which is typically located in highly-populated areas) so that the content is delivered faster to the end users.
