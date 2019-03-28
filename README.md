@@ -35,3 +35,27 @@ Three ways to use AWS:
   - Enable applications built on AWS to manage your infrastructure’s code
   - Access AWS using a variety of popular programming languages (JavaScript, Python (boto), PHP, .NET, Ruby, Go, Node.js, C++, Java)
 
+<br>
+
+## AWS Core Services
+**EC2, …**
+
+### Elastic Compute Cloud
+ - **Elastic** – if properly configured, automatically scale servers required by an application according to current demands on that application
+ - **Compute** – compute or server resources that are being presented (servers = instances, in AWS lexicon)
+ - **Cloud** – cloud-hosted compute resources
+
+Amazon EC2 Instances are (i) pay as you go, (ii) offer a broad selection of hardware and software, and (iii) have global hosting.
+
+**Build and Configure an EC2 Instance** 
+ - Login to AWS Console
+ - Choose a hosting region
+ - Launch EC2 Wizard
+ - Select software platform for the instance (choose Amazon Machine Image (AMI))
+ - Select hardware capabilities (choose Instance Type)
+ - Configure instance Network – default is virtual private cloud (VPC); default auto-assign settings give user a default DHCP address.
+ - Add Storage
+ - Add Tags – assign the Key Pairs that allow user to connect to instance after it has been launched.
+ - Configure Security Group – the set of firewall rules that control the traffic for the instance.
+ - Review and Launch
+ - Once instance launched, locate public DNS and public IP address; use this DNS info to access EC2 instance via Putty.
