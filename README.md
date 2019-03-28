@@ -38,9 +38,9 @@ Three ways to use AWS:
 <br>
 
 ## AWS Core Services
-**EC2, …**
+**EC2, EBS, …**
 
-### Elastic Compute Cloud
+### Elastic Compute Cloud (EC2)
  - **Elastic** – if properly configured, automatically scale servers required by an application according to current demands on that application
  - **Compute** – compute or server resources that are being presented (servers = instances, in AWS lexicon)
  - **Cloud** – cloud-hosted compute resources
@@ -59,3 +59,19 @@ Amazon EC2 Instances are (i) pay as you go, (ii) offer a broad selection of hard
  - Configure Security Group – the set of firewall rules that control the traffic for the instance.
  - Review and Launch
  - Once instance launched, locate public DNS and public IP address; use this DNS info to access EC2 instance via Putty.
+<br>
+
+### Elastic Block Store (EBS)
+EBS is a storage unit for EC2 instances
+ - **Disaster Recovery** – Can backup EBS volume using **snapshots** – AWS allows user to recreate a new volume from a snapshot at any time (like versioning).
+ - **Reliability** – EBS volumes designed to be durable and available (data in a volume automatically replicated across multiple servers running in the availability zone).
+ - **Security** – Can have encrypted EBS volumes at no additional cost.
+
+**Create, Attach, and Format an EBS Volume to an EC2 Instance**
+ - In AWS Console, create EBS volume in same availability zone as EC2 instance(s) to which it will be attached
+ - Attach EBS volume to desired EC2 instance from AWS Console
+ - Access EC2 instance via SSH; use CLI command *lsblk* to view block storage devices attached to this EC2 instance (this will include the EBS volume just attached through the AWS Console)
+ - Can use Linux OS to create a file system on this EBS volume
+ - Can mount this EBS volume into a folder on Linux machine
+ - At any time can unmount EBS volume from folder – then can detach EBS volume from EC2 instance in AWS Console
+ - Once detached/available, can attach this EBS volume to another EC2 instance in same availability zone
