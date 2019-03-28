@@ -38,7 +38,7 @@ Three ways to use AWS:
 <br>
 
 ## AWS Core Services
-**EC2, EBS, S3, Global Infrastructure, …**
+**EC2, EBS, S3, Global Infrastructure, VPC, …**
 
 ### Elastic Compute Cloud (EC2)
  - **Elastic** – if properly configured, automatically scale servers required by an application according to current demands on that application
@@ -96,5 +96,24 @@ In S3:
 ### Global Infrastructure
 **AWS Global Infrastructure comprised of Regions, Availability Zones, and Edge Locations**
  - **Regions** – geographic areas that host two or more Availability Zones.  Regions are completely separate entities from one another.  Resources in one Region are not automatically replicated to other Regions.  In practice, select a Region that helps minimize latency, lower cost, and adhere to regulatory requirements.
- - **Availability Zones** – collection of data centers in a specific Region.  With reliability in mind, Availability Zones are isolated to protected one Zone from failures in other Zones (if one Zone goes down, the other Zones can handle requests).
+ - **Availability Zones** – collection of data centers in a specific Region.  With reliability in mind, Availability Zones are isolated to protect one Zone from failures in other Zones (if one Zone goes down, the other Zones can handle requests).
  - **Edge Locations** – enable quicker content delivery.  Edge Locations host a Content Delivery Network (CDN) called Amazon Cloud Front.  Requests for content are automatically routed to nearest Edge Location (which is typically located in highly-populated areas) so that the content is delivered faster to the end users.
+<br>
+
+### Virtual Private Cloud (VPC)
+VPC is the **Networking** AWS service that will meet your networking requirements.
+
+**VPC:**
+ - Is a private, virtual network in AWS Cloud (uses same concepts as on-premise networking)
+ - Allows complete control of network configuration (ability to isolate and expose resources inside VPC)
+ - Offers several layers of security controls (ability to allow and deny specific internet and internal traffic)
+ - Is a space into which other AWS services deploy (e.g Amazon EC2 deployed into Amazon VPC and instance protected by structure of network – services inherit security built into network)
+
+**VPC Features:**
+ - VPC defines an IP-address space (that is divided into subnets)
+ - VPCs are Region-based
+ - Each AWS account can create multiple VPCs (that can be used to segregate environments)
+ - *IP-address spaces*, *subnets*, and *routing tables* allow you to control what you expose to internet and what you isolate within Amazon VPC.
+ - Route tables control traffic between subnets and the internet.  Subnets generally classified as public (direct access to internet) or private (no direct access to internet)
+ - *Internet Gateway* needed to make subnets public.
+<br>
