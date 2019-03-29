@@ -157,6 +157,7 @@ Application Load Balancer allows you to route different requests to the same ins
 If you have different containers listening on various ports, you can set up routing rules to distribute traffic to only the desired backend application.
 <br>
 
+
 ### Auto Scaling
 **Auto Scaling adjusts EC2 instance quantity based on current demands on application**.  It has two main aspects:
  - Automate EC2 resource provisioning.
