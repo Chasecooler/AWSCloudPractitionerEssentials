@@ -156,3 +156,15 @@ Application Load Balancer allows you to route different requests to the same ins
 
 If you have different containers listening on various ports, you can set up routing rules to distribute traffic to only the desired backend application.
 <br>
+
+### Auto Scaling
+**Auto Scaling adjusts EC2 instance quantity based on current demands on application**.  It has two main aspects:
+ - Automate EC2 resource provisioning.
+ - Ensure enough EC2 resources to meet fluctuating performance requirements.
+
+**Scaling Policies** define WHEN to adjust capacity of group.
+
+Amazon Cloud Watch monitors performance of application and can help guide your Auto Scaling condition definitions.  **The conditions you create/specify, define thresholds to trigger adding or removing instances** (e.g., CPU utilization over 80%).
+
+Auto Scaling powerful in environment with fluctuating performance requirements (**allows you to maintain performance while minimizing cost**).  Condition-based policies make your auto-scaling dynamic and able to meet fluctuating requirements.
+<br>
