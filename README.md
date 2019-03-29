@@ -130,3 +130,29 @@ Can create and configure security groups from AWS Console.  Default security gro
 
 <br>
 
+## AWS Integrated Services
+
+### Application Load Balancer
+(i) Launch Application Load Balancer (ii) Configure routing (iii) Register targets (iv) Verify routing
+
+**Application load balancer useful when page that is visible at page location (.html) is port-dependent.  Load balancer listens on different ports each with an associated routing rule.  Can route to more than one container from same load balancer.**
+
+Adds unique features and enhancements to classic load balancer:
+
+Added Features:
+ - Path and host-based routing (Path-based routing allows creation of rules to route to target groups based on URL in request.  Host-based routing enables ability to have multiple domains supported by same load balancer and route requests to target groups based on domain requested)
+ - Dynamic ports
+ - Deletion protection and request tracing
+ - Native IPv6 support in a VPC
+ - AWS Web Application Firewall (WAF) integration
+
+Enhanced Features:
+ - Additional Supported Request Protocols (HTTP, HTTPS, HTTP/2, and WebSockets)
+ - Enhanced Cloud Watch Metrics (additional load balance metrics and Target Group metric dimension)
+ - Enhanced Access Logs (ability to see connection details for WebSocket connections)
+ - More Health Checks (insight into target and application health at more granular level)
+
+Application Load Balancer allows you to route different requests to the same instance, but differ the path based on the port.
+
+If you have different containers listening on various ports, you can set up routing rules to distribute traffic to only the desired backend application.
+<br>
