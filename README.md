@@ -178,3 +178,17 @@ AWS Edge Locations house the DNS servers; these locations shorten the distance b
 Route 53 is fully-compliant with IPv4 and IPv6.
 
 <br>
+
+### Relational Database Services (RDS)
+Addresses challenges of running a standalone database.
+**Amazon RDS is a managed service that sets up, operates, and scales a relational database in the cloud.**  Can run database instance using VPC.
+
+**Disaster Recovery** – **Automatic backups of database instance**.  If master database fails, Amazon RDS automatically brings standby database instance in as new master; thanks to synchronous replication, there should be no data loss.
+
+Available DB Engines: MySQL, Amazon Aurora, MS SQLServer, PostgreSQL, MariaDB, Oracle (a subset of these offer **read replica instances**).  Can reduce load on source database by routing read queries from your applications to the read replica instance (when available).  
+
+RDS ideal for web and mobile applications, e-commerce applications, mobile and online games.
+
+<br>
+
+
