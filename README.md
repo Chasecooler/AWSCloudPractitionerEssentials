@@ -38,7 +38,7 @@ Three ways to use AWS:
 <br>
 
 ## AWS Core Services
-**EC2, EBS, S3, Global Infrastructure, VPC, …**
+**EC2, EBS, S3, Global Infrastructure, VPC, Security Groups**
 
 ### Elastic Compute Cloud (EC2)
  - **Elastic** – if properly configured, automatically scale servers required by an application according to current demands on that application
@@ -117,3 +117,16 @@ VPC is the **Networking** AWS service that will meet your networking requirement
  - Route tables control traffic between subnets and the internet.  Subnets generally classified as public (direct access to internet) or private (no direct access to internet)
  - *Internet Gateway* needed to make subnets public.
 <br>
+
+### Security Groups
+Act as built-in firewalls.  Control accessibility to instances.
+
+Control network accessibility to your instances by creating security group rules.
+ - HTTP: Port 80
+ - HTTPS: Port 443
+ - SSH: Port 22
+
+Can create and configure security groups from AWS Console.  Default security group rule denies all inbound traffic and allows all outbound traffic.
+
+<br>
+
