@@ -191,4 +191,17 @@ RDS ideal for web and mobile applications, e-commerce applications, mobile and o
 
 <br>
 
+### AWS Lambda
+AWS’ event-driven, serverless compute service.  Lets you run code without provisioning or managing services.  Useful for operating serverless websites.
+
+AWS Lambda is a compute service that runs your backend code and responds to events such as object uploads to Amazon S3 buckets, updates to Amazon DynamoDB tables, data in Amazon Kinesis streams, or in-app activity.  **Code triggered automatically when an event occurs.**
+Can invoke your code using API calls made using the AWS SDKs.
+
+The code you run (written in Java, Python, etc.) on AWS Lambdas is called a Lambda Function.
+
+Lambda runs your code only when triggered, using only the compute resources needed (only pay for the compute time you use – subsecond metering).  Can use Cloud Watch Events to trigger Lambda Functions.  **Easy to build applications that respond quickly to new information.**
+
+<br>
+
+
 
