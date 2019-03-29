@@ -155,8 +155,8 @@ Enhanced Features:
 Application Load Balancer allows you to route different requests to the same instance, but differ the path based on the port.
 
 If you have different containers listening on various ports, you can set up routing rules to distribute traffic to only the desired backend application.
-<br>
 
+<br>
 
 ### Auto Scaling
 **Auto Scaling adjusts EC2 instance quantity based on current demands on application**.  It has two main aspects:
@@ -168,4 +168,13 @@ If you have different containers listening on various ports, you can set up rout
 Amazon Cloud Watch monitors performance of application and can help guide your Auto Scaling condition definitions.  **The conditions you create/specify, define thresholds to trigger adding or removing instances** (e.g., CPU utilization over 80%).
 
 Auto Scaling powerful in environment with fluctuating performance requirements (**allows you to maintain performance while minimizing cost**).  Condition-based policies make your auto-scaling dynamic and able to meet fluctuating requirements.
+
+<br>
+
+### Route 53
+Managed service to easily get users to your web content.  Can use Route 53 to purchase a domain.  **Route 53 translates human-readable domain names into the IP-address of an EC2 instance** (e.g., example.com translated into 54.85.178.219).  With Route 53, easily register and resolve DNS names.
+
+AWS Edge Locations house the DNS servers; these locations shorten the distance between your DNS-resolution and your customers.
+Route 53 is fully-compliant with IPv4 and IPv6.
+
 <br>
