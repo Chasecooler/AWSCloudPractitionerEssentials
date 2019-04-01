@@ -227,3 +227,27 @@ With Amazon SNS message filtering, subscribing endpoints receive only the messag
 
 <br>
 
+### CloudWatch
+**Monitors your AWS resources and the applications you run on AWS in real time.**
+
+Select Features:
+- Collect and track metrics (data about the performance of the systems)
+- Collect and monitor log files 
+- Set alarms on any of your metrics (measure a single metric and perform 1 or more actions – e.g., trigger an auto-scaling event)
+- Automatically react to changes
+
+Gain a system-wide visibility into your resource utilization, application performance, as well as operational health.
+
+Metrics loaded into your account for search, graphing, and alarms.
+
+Alarms invoke actions for *sustained* state changes only.
+
+Aware of operational changes as they occur – responds to these operational changes and takes corrective action as necessary.
+
+Can schedule automated actions that self-trigger at certain times.
+
+Logs – monitor and troubleshoot systems and applications using existing log files.  **Can monitor logs from Amazon EC2 instances in real time (and then archive log data – helpful for security compliance).**  Logs can be streamed in real time to data processing solutions like Amazon Kinesis Streams or AWS Lambda.
+
+Can create dashboards with customizable views of the metrics and alarms you wish to monitor.
+
+<br>
