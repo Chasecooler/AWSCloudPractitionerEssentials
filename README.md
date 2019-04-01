@@ -214,3 +214,16 @@ Simply upload your code and Elastic Beanstalk automatically handles the deployme
 
 <br>
 
+### Simple Notification Service (SNS)
+Used when microservices need to talk to each other, or for event-dependent email notifications (like SharePoint alerts – e.g., email notification if item added/deleted from S3 bucket).
+
+SNS can be used to fan out notifications to end users using mobile push, SMS, and email.
+
+Amazon SNS reliably delivers messages to all valid AWS endpoints, such as Amazon SQS queues and AWS Lambda functions.
+
+With Amazon SNS message filtering, subscribing endpoints receive only the messages of interest, instead of all messages published to the topic.
+
+**Security via Topic Policy** – Amazon SNS topic owners can keep sensitive data secure by setting topic policies that restrict who can publish and subscribe to a topic.
+
+<br>
+
