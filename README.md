@@ -251,3 +251,10 @@ Logs – monitor and troubleshoot systems and applications using existing log fi
 Can create dashboards with customizable views of the metrics and alarms you wish to monitor.
 
 <br>
+
+### CloudFront
+A fast Content Delivery Network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer-friendly environment.
+
+Can cache content in an Edge Location (more than 80 Edge Locations world-wide) that is closer to actual location of users of application – decreases latency.  Distance between where application running (e.g., Singapore) and where users located (e.g., Seattle) not a transfer speed issue with CloudFront.  Leverages AWS Global Infrastructure to lower latency.
+
+With caching, server calls NOT required for every request on webpage.  Content can be served from cache even if server crashes (resilient).
