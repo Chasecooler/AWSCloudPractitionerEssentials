@@ -258,3 +258,20 @@ A fast Content Delivery Network (CDN) service that securely delivers data, video
 Can cache content in an Edge Location (more than 80 Edge Locations world-wide) that is closer to actual location of users of application – decreases latency.  Distance between where application running (e.g., Singapore) and where users located (e.g., Seattle) not a transfer speed issue with CloudFront.  Leverages AWS Global Infrastructure to lower latency.
 
 With caching, server calls NOT required for every request on webpage.  Content can be served from cache even if server crashes (resilient).
+
+<br>
+
+### CloudFormation
+
+Create and manage your infrastructure and application stack in a controlled and predictable way.  
+
+Provisions and manages stacks of AWS resources based on templates you create to model your AWS infrastructure.
+
+**Template (JSON file) is your blueprint to define configuration of all AWS resources that comprise your infrastructure and application stack.**  Can also select a sample pre-built template for commonly-used architecture.  Templates enable configuration compliance and faster troubleshooting.
+
+Build and rebuild/modify easily with templates (and parameters and conditions) – Easy to replicate infrastructure (e.g., replicate development environment for production and testing).  Can check your template into version control (to track changes).
+
+Permissions control who has ability to process a template through CloudFormation.
+
+<br>
+
