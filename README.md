@@ -275,3 +275,41 @@ Permissions control who has ability to process a template through CloudFormation
 
 <br>
 
+
+## AWS Architecture
+
+### AWS Well-Architected Framework
+5 pillars: (i) security, (ii) reliability, (iii) performance efficiency, (iv) cost-optimization, (v) operational excellence
+
+**(i) Security:**
+- identity and access management
+- identify potential security threats (e.g. through analyzing logs – logs enable traceability)
+- data protection through encryption
+- data backup (replication and recovery when needed)
+- automate security best practices
+
+**(ii) Reliability:** 
+- recover from issues/failures
+- anticipate, respond, and prevent failures
+- ability to dynamically acquire / eliminate computing resources to meet demand and mitigate disruptions
+- take advantage of automation through monitoring to anticipate and remediate failures before they even occur
+- test recovery procedures
+- replace one large resource with multiple smaller resources to reduce impact of any single point of failure on overall system
+
+**(iii) Performance Efficiency:**  
+- get right tool for right job
+- continually innovate solutions through review
+- monitor performance to address any issues before customers disrupted (e.g., with CloudWatch)
+- consume advanced technologies *as a service* (especially those that can be difficult to implement)
+- global reach
+
+**(iv) Cost-Optimization:** 
+- continual refinement and improvement of system (optimize over time – can measure, monitor, and improve architecture from data you’ve collected on AWS platform).
+- maximize return on investment
+- leverage elasticity to match supply with fluctuating demand
+- pay only for resources used
+- stop/reduce spending on physical data center operations
+- use managed services to reduce cost of ownership
+
+**(v) Operational Excellence:**
+- manage and automate changes
