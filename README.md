@@ -203,5 +203,14 @@ Lambda runs your code only when triggered, using only the compute resources need
 
 <br>
 
+### Elastic Beanstalk
+Quickly deploy and manage applications in the AWS Cloud.  **Allows quick and simple deployment of your web applications; can quickly upload and deploy pre-existing code** (supports Java SE, Python, .NET, etc.).  Can update your application (with a new version) as easily as you deployed it.
 
+Simply upload your code and Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring (can still access the underlying resources powering your application at any time and take over some (or all) of these infrastructure elements with Elastic Beanstalk’s management capabilities).
+
+**Within minutes, your applications will be ready to use without any infrastructure or resource configuration on your part.**
+
+**Developer Productivity** – Elastic Beanstalk provisions and operates the infrastructure and manages the application stack (platform) for you, so you don’t have to spend the time or develop the expertise.  **Focus on writing code rather than spending time managing and configuring servers, databases, load balancers, firewalls, and networks.** 
+
+<br>
 
