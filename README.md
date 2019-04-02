@@ -290,7 +290,7 @@ Permissions control who has ability to process a template through CloudFormation
 
 **(ii) Reliability:** 
 - recover from issues/failures
-- anticipate, respond, and prevent failures
+- anticipate, respond to, and prevent failures
 - ability to dynamically acquire / eliminate computing resources to meet demand and mitigate disruptions
 - take advantage of automation through monitoring to anticipate and remediate failures before they even occur
 - test recovery procedures
@@ -313,3 +313,29 @@ Permissions control who has ability to process a template through CloudFormation
 
 **(v) Operational Excellence:**
 - manage and automate changes
+
+<br>
+
+### Fault Tolerance and High Availability
+
+- built-in redundancy of an application’s components
+
+**High Availability Service Tools:**
+- Elastic Load Balancers – distributes incoming traffic among instances (customizable)
+- Elastic IP Addresses – masks failure of an instance or software by allowing users to use the same IP address(es) with replacement resources (can still access applications even if an instance fails)
+- Amazon Route 53 – supports geo-location routing to increase availability of customer-facing applications
+- Auto Scaling – scale in/out as necessary to meet fluctuations in demand
+- CloudWatch – collects and tracks metrics of your AWS infrastructure (often used in conjunction with Auto Scaling to ensure high availability)
+
+**Fault Tolerant Tools:**
+- Amazon Simple Queue Service (SQS) – highly-reliable distributed messaging system to help ensure your queue is always available
+- Amazon Simple Storage Service (S3) – highly-durable and fault-tolerant redundant data storage (to ensure still have access to all of your information even if there is a failure)
+- Amazon Relational Database Service (RDS) – enhance reliability via automated backups, snapshots, multi-Availability-Zone deployments, etc.
+
+<br>
+
+### Web Hosting
+- cost-effective, scalable, and on-demand solution
+- helps handle usage peaks in a way that is cost-effective (on-demand provisioning where you only pay for what you use)
+- provision testing fleets only when you need them
+
