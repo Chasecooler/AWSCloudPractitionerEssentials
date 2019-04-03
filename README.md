@@ -339,3 +339,47 @@ Permissions control who has ability to process a template through CloudFormation
 - helps handle usage peaks in a way that is cost-effective (on-demand provisioning where you only pay for what you use)
 - provision testing fleets only when you need them
 
+<br>
+
+## Security
+
+### Introduction to AWS Security
+AWS Data Center and Network Architecture Security will satisfy requirements of most security-sensitive customers.  Designed to meet compliance requirements.
+
+AWS Shared Responsibility Model: as AWS user, inherit many security controls that AWS operates, which reduces the number of security controls you have to maintain.
+
+Network Security – built-in firewalls, encryption in transit, private/dedicated connections, distributed denial of service (DDoS) mitigation technology
+
+Inventory and Configuration Management
+
+Data Encryption – to help satisfy specific compliance requirements; can have AWS manage encryption keys or can choose to maintain complete control over encryption keys
+
+Access Control and Management – can define and force managed user access policies across AWS services; IAM, MFA, integration and federation with corporate directories, Amazon Cognito, AWS SSO
+
+Monitoring and Logging capabilities
+
+Many industry-leading partner products also available through AWS Marketplace  
+
+<br>
+
+### Shared Responsibility Model
+You and AWS work together to secure your entire application.
+
+Physical, Network, and Hypervisor components of your application stack 100% secured by AWS.
+
+Guest OS, Application, and User Data components of your application stack 100% your responsibility to secure.  AWS has ZERO VISIBILITY into these components.
+
+<br>
+
+### Identity and Access Management
+User, group, role used for **authentication**.  Policy Docs (which define permissions) used for **authorization.**
+With permissions, can permanently prevent/deauthorize certain actions from happening.
+
+Solution for compromised set of credentials scenario – if using Policy Docs attached to users, and not using root level credentials, security manager (who doesn’t know which account got compromised) can remove every policy doc from all users and groups and roles *in a single action*.  As a result, hacker no longer has access.
+
+<br>
+
+### Amazon Inspector
+Automated threat/security assessment service (done both before application deployed and while running in a production environment).  After assessment, Amazon Inspector produces a detailed report of potential security issues with prioritized steps for remediation.  Helps identify security issues before they impact your production application.  AWS security researchers regularly update assessment criteria.
+
+<br>
