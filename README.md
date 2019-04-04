@@ -383,3 +383,32 @@ Solution for compromised set of credentials scenario – if using Policy Docs at
 Automated threat/security assessment service (done both before application deployed and while running in a production environment).  After assessment, Amazon Inspector produces a detailed report of potential security issues with prioritized steps for remediation.  Helps identify security issues before they impact your production application.  AWS security researchers regularly update assessment criteria.
 
 <br>
+
+### AWS Shield
+
+**A managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS.**
+
+In a DDoS attack, multiple sources used to attack target – may impact infrastructure and application layers (way site communicates with other sites); disrupts application availability.
+
+Use Web Application Firewalls (WAFs) to prevent application layer attacks (can customize mitigation).
+
+AWS Shield:
+- Standard Tier – *always on* network flow monitoring to detect DDoS attacks (protection from most frequently occurring network and transport layer DDoS attacks).
+- Advanced Tier – includes 24/7 access to DDoS Response Team, DDoS cost protection (service credits when services scale-up (spike) in response to a DDoS attack), customizable protection (to mitigate sophisticated application layer attacks).
+
+<br>
+
+### Security Compliance
+
+Customers responsible for following compliance laws and regulations.
+
+In some cases, AWS offers functionality, enablers, and legal agreements to support customer compliance.  AWS provides information about their risk and compliance programs so AWS customers can incorporate AWS controls into their governance frameworks.
+
+**By engaging with AWS in the compliance and governance process, customers can design to compliance requirements.**
+Customer Compliance Process:
+1. Review trusted information and document compliance requirements
+2. Design and implement control objectives that meet compliance requirements
+3. Identify and document controls owned by outside partners
+4. Verify all control objectives are met and all key controls are designed and operating effectively
+
+<br>
