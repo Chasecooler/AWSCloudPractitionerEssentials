@@ -412,3 +412,30 @@ Customer Compliance Process:
 4. Verify all control objectives are met and all key controls are designed and operating effectively
 
 <br>
+
+## Pricing and Support
+
+### Fundamentals of Pricing
+- Only pay for services you consume; no long-term contract; no termination fees
+- Pay as you go (as-needed basis)
+- Pay less when you reserve (for services like EC2 and RDS)
+- Pay even less per unit by using more (aka ‘tiered pricing’ for services like S3 and data transfer out from EC2)
+- Pay even less as AWS grows
+- Data transfer IN is always free of charge
+- Free usage tier for new customers
+
+### Pricing Details
+Cost impacted by these three categories: compute capacity, storage, outbound data transfer (aggregated).  Pricing specifics vary depending on AWS product you are using.
+
+### AWS Trusted Advisor
+Trusted Advisor is an online resource that rates how optimal your resources are in terms of cost, performance, security, and fault-tolerance and provides recommended actions for improvement when necessary.
+
+### AWS Support Plans
+- Proactive Guidance via Technical Account Manager (TAM)
+- Best Practices via the Trusted Advisor online resource
+- Account Assistance via AWS Support Concierge
+
+Four support plans: Basic, Developer, Business, Enterprise 
+
+<br>
+
