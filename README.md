@@ -439,3 +439,6 @@ Four support plans: Basic, Developer, Business, Enterprise
 
 <br>
 
+## Sources
+- aws.amazon.com websites
+- AWS Cloud Practitioner Essentials (Second Edition) online exam prep videos
